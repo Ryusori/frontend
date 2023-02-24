@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- 100%, 250px와 같이 쉼표 사용하면 각 배경에 서로 다른 크기를 입력하는 것으로 인식-->
+<html lang="en">
+<head>
+    <title>Background</title>
+    <style>
+        body{
+            background-image: url('BackgroundFront(1).png'), url("BackgroundBack\(1\).png");
+            /*첫번째 이미지 너비:100% 두번째 이미지 너비: 250px */
+            /* 100%, 250px; -> 콤마를 주게 되면 각각 처리하게 된다.*/
+            /*100% 250px -> 콤마를 주지 않으면 너비와 높이가 되어버림.*/
+            background-size: 100%, 250px; 
+        }
+    </style>
+</head>
+<body>
+ 
+</body>
+</html>

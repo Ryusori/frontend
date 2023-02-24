@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 그룹을 만들려면 optgroup을 속성으로 한다.-->
+<html lang="en">
+<head>
+    <title>Form Basic</title>
+</head>
+<body>
+    <table border="2">  <!--선 두께-->
+        <tr>
+            <th colspan="20">입력양식</th>  <!--열 합침-->
+        </tr>
+        <tr> 
+            <td>
+                <form>
+                    <label for="name">이름&nbsp;&nbsp;&nbsp;</label>  
+                    <input id="name" type="text"><br />
+                    <label for="email">이메일</label>  
+                    <input id="email" type="email"><br />
+                    <label for="url">url&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </label>  
+                    <input id="url" type="url"><br />
+                    <input id="man" type="radio" name="gender" value="m" />
+                    <label for="man">남자</label>
+                    <input id="woman" type="radio" name="gender" value="f" />
+                    <label for="woman">여자</label><br />
+                    <input type="submit" value="제출" />
+                    <input type="submit" value="취소" />  
+                </form>
+                
+            <td>      
+        </tr>   
+    </table>    
+    
+    <hr />    
+    
+    <table border="2">  <!--선 두께-->
+       
+        <tr>   
+            <form action="#">
+                <fieldset>
+                    <style>
+                        legend {
+                            color: white;
+                            background: rgb(12,100,177);
+                        }
+                        th {
+                            color: white;
+                            background: rgb(177,100,177);
+                        }
+                        form {
+                            color: white;
+                            background: rgb(235, 182, 230);
+                        }
+                    </style> 
+                    <legend>입력양식</legend>
+                    <h4>
+                        <label for="name">이름&nbsp;&nbsp;</label> 
+                        <input id="name" type="text"><br />
+                    
+                        <label for="email">이메일</label>  
+                        <input id="email" type="email"><br />
+                        <label for="url">url&nbsp;&nbsp;  </label>  
+                        <input id="url" type="url"><br />
+                        <input id="man" type="radio" name="gender" value="m" />
+                        <label for="man">남자</label>
+                        <input id="woman" type="radio" name="gender" value="f" />
+                        <label for="woman">여자</label><br />
+                        <input type="submit" value="제출" />
+                        <input type="submit" value="취소" />   
+                    </h4>
+                </fieldset>
+            </form>          
+        </tr> 
+    </table>    
+</body>
+</html>
